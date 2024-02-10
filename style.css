@@ -1,0 +1,92 @@
+/* Base styles */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #faf0e6;
+  color: #333;
+}
+
+header {
+  background-color: #ffdab9;
+  color: #800000;
+  text-align: center;
+  padding: 20px 10px; /* Reduced padding */
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.5em; /* Adjusted size */
+}
+
+header p {
+  font-style: italic;
+  margin: 10px 0; /* Added margin for spacing */
+}
+
+#gallery {
+  text-align: center;
+  padding: 20px 5px; /* Reduced padding */
+}
+
+#gallery img {
+  width: 90%;
+  max-width: 300px; /* Adjust for smaller screens */
+  margin: 10px 5px; /* Adjusted margin */
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+#wishes {
+  background-color: #fff0f5;
+  padding: 20px 10px; /* Reduced padding */
+  text-align: center;
+}
+
+#wishes h2 {
+  color: #800000;
+}
+
+textarea {
+  width: 80%; /* Responsive width */
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #800000;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Media Queries for additional responsiveness */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.2em; /* Smaller font size for smaller devices */
+  }
+
+  #gallery img {
+    max-width: 95%; /* Larger relative width on smaller screens */
+    margin: 5px; /* Smaller margin */
+  }
+
+  textarea,
+  button {
+    width: 90%; /* Increase width for better touch interaction */
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 15px 5px; /* Reduced padding for very small screens */
+  }
+
+  header p,
+  #wishes h2 {
+    font-size: 0.9em; /* Smaller text for small screens */
+  }
+}
